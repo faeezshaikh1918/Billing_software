@@ -1,5 +1,5 @@
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { fetchSales, fetchSalesSummary } from "../api/sales.jsion";
+// import { fetchSales, fetchSalesSummary } from "src/features/sales/api/salesApi";
 import type { ListQuery } from "../../../shared/types";
 
 export const salesKeys = {
@@ -11,7 +11,7 @@ export const salesKeys = {
 export function useSalesList(query: ListQuery) {
   return useQuery({
     queryKey: salesKeys.list(query),
-    queryFn: () => fetchSales(query),
+    // queryFn: () => fetchSales(query),
     placeholderData: keepPreviousData,
   });
 }
@@ -19,7 +19,7 @@ export function useSalesList(query: ListQuery) {
 export function useSalesSummary() {
   return useQuery({
     queryKey: salesKeys.summary,
-    queryFn: fetchSalesSummary,
+    // queryFn: fetchSalesSummary,
     staleTime: 60_000,
   });
 }
