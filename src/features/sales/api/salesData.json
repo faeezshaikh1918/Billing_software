@@ -1,0 +1,35 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Shoes"
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "name": "Nike"
+    }
+  ],
+  "units": [
+    {
+      "id": 1,
+      "name": "PCS"
+    },
+    {
+      "id": 2,
+      "name": "PAIR"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "Nike Air Max",
+      "category": "Shoes",
+      "brand": "Nike",
+      "unit": "PAIR",
+      "price": 5999,
+      "gst": 18
+    }
+  ]
+}
